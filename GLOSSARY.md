@@ -17,7 +17,7 @@ A learner's ask, with their reason, to get back what they paid for a purchase. A
 _Avoid_: Refund (for the ask itself), Cancellation, Reversal, Chargeback
 
 **Refund Eligibility**:
-Whether a learner may raise a Refund Request on a purchase. They must be within fourteen calendar days of buying, have watched under two hours, have completed under half the lessons, and must not have bought a Team seat that has been claimed. Eligibility is judged when the request is raised, not when an Admin decides it.
+Whether a learner may raise a Refund Request on a purchase. Only a learner's own purchase of a course counts; Team seats can't be refunded. They must be within fourteen calendar days of buying, have watched under two hours, and have completed under half the lessons. Eligibility is judged when the request is raised, not when an Admin decides it.
 
 **Open Refund Request**:
 A Refund Request an Admin hasn't decided yet.
@@ -38,8 +38,8 @@ A Refund from an approved Refund Request where the money hasn't been confirmed a
 _Avoid_: Pending (for a Refund Request awaiting review)
 
 **Issued Refund**:
-A Refund where an Admin has confirmed the money was sent back to the learner.
+A Refund where an Admin has confirmed the money was sent back to the learner. Once a Refund is Issued it stays Issued.
 _Avoid_: Completed, Paid out
 
 **Failed Refund**:
-A Refund where the money couldn't be sent. The Refund Request stays approved, because the decision hasn't changed.
+A Refund where the money couldn't be sent. The Admin records why, for other Admins to see. The Refund Request stays approved, because the decision hasn't changed, and the Refund becomes Issued once an Admin sends the money successfully. The learner sees it as still on its way.
