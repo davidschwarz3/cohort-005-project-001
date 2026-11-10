@@ -14,6 +14,13 @@ _Avoid_: Admin (on its own), the team, Staff
 A learner who buys and manages a Team Licence. A Team Admin has no say over Refund Requests.
 _Avoid_: Admin (on its own)
 
+**Instructor**:
+A person who builds and edits their own courses and sees the learners enrolled on them.
+_Avoid_: Teacher, Author, Creator
+
+**Lapsed**:
+A learner who once had a place on a course but no longer does.
+
 ### Purchases
 
 **Purchase**:
@@ -68,46 +75,12 @@ _Avoid_: Completed, Paid out
 **Failed Refund**:
 A Refund where the money couldn't be sent. The Refund Request stays approved, because the decision hasn't changed.
 
-### Other terms
-
-**Watch Limit**:
-A Refund is only offered on a course with under two hours watched. Past that, the Learner has had the course, and the refund form turns them away.
-_Avoid_: Watch cap, Viewing threshold
-
-**Refunds table**:
-`refunds` — one row per Refund. Columns: `id`, `purchase_id`, `status` (`open`, `approved`, `declined`), `reason`, `amount_refunded`, `requested_at`, `resolved_at`, `resolved_by_user_id`, `decision_note`.
-
-**refunded_at**:
-Nullable text column on `coupons`. An ISO timestamp, set on every unclaimed coupon when its team purchase is refunded. `getSeatAvailability` returns `"refunded"` for it.
-
-**resolved_by_user_id**:
-Integer column on `refunds`, referencing `users.id`. Null until an Admin approves or declines the Refund.
-
-**RefundRequestCard**:
-The component that draws one Refund Request on `/admin/refunds`, with its Approve and Decline buttons.
-
-**Button**:
-A clickable element that fires an action when the user presses it. Built on `~/components/ui/button`.
-
-**Component**:
-A React function that returns JSX.
-
-**cwd**:
-The directory the dev server was started from. Paths in `scripts/` resolve from here.
-
-**Loader**:
-The React Router function that fetches a route's data on the server before the page renders.
-
-**Slug**:
-The URL-safe name of a course, as in `/courses/:slug`.
-
-**Lapsed**:
-An Enrollment that is no longer active. Shown as a badge on the instructor's student roster.
-
-**Instructor**:
-Speaks for their own courses only. An Instructor builds and edits the courses they own, and sees the learners enrolled on them.
-_Avoid_: Teacher, Author, Creator
+### Watching
 
 **Watched**:
-Seconds of video a Learner has actually played in a course: the furthest point reached in each lesson, added up. Not lessons opened.
+The seconds of video a learner has actually played in a course: the furthest point reached in each lesson, added up. Not lessons opened.
 _Avoid_: Viewed, Progress
+
+**Watch Limit**:
+The amount Watched past which a learner has had the course and can no longer raise a Refund Request for it.
+_Avoid_: Watch cap, Viewing threshold
