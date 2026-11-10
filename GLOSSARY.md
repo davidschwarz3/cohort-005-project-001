@@ -4,32 +4,41 @@ Cadence sells video courses to learners. This glossary covers the language aroun
 
 ## Language
 
+### People
+
+**Admin**:
+A Cadence staff member. Admins are the only people who decide Refund Requests.
+_Avoid_: the team (a Team is a group that bought seats together, and its Team Admin can't decide refunds), Instructor
+
 ### Refunds
 
 **Refund Request**:
-A learner's ask, with their reason, to get back what they paid for a purchase. The team approves or declines it. One purchase can have several Refund Requests over time, but only one can be undecided at once.
+A learner's ask, with their reason, to get back what they paid for a purchase. An Admin approves or declines it. One purchase can have several Refund Requests over time, but only one can be undecided at once.
 _Avoid_: Refund (for the ask itself), Cancellation, Reversal, Chargeback
 
+**Refund Eligibility**:
+Whether a learner may raise a Refund Request on a purchase. They must be within fourteen calendar days of buying, have watched under two hours, have completed under half the lessons, and must not have bought a Team seat that has been claimed. Eligibility is judged when the request is raised, not when an Admin decides it.
+
 **Open Refund Request**:
-A Refund Request the team hasn't decided yet.
+A Refund Request an Admin hasn't decided yet.
 _Avoid_: Pending, Requested, Awaiting review
 
 **Approved Refund Request**:
-A Refund Request the team has accepted. Approving it is what leads to a Refund.
+A Refund Request an Admin has accepted. Approving it is what leads to a Refund.
 
 **Declined Refund Request**:
-A Refund Request the team has turned down. It has no Refund, and the learner may raise a new Refund Request.
+A Refund Request an Admin has turned down. The Admin always gives the learner a reason, so they know what to change if they raise a new Refund Request. It has no Refund.
 
 **Refund**:
 The money returned to a learner after their Refund Request is approved. It is always the full amount they paid. A declined Refund Request has no Refund.
 _Avoid_: Reversal, Chargeback, Cancellation
 
 **Pending Refund**:
-A Refund the team has approved where the money hasn't been confirmed as sent yet.
+A Refund from an approved Refund Request where the money hasn't been confirmed as sent yet. Cadence doesn't send the money itself: an Admin sends it outside Cadence, then confirms whether it went through.
 _Avoid_: Pending (for a Refund Request awaiting review)
 
 **Issued Refund**:
-A Refund where the money has been confirmed as sent back to the learner.
+A Refund where an Admin has confirmed the money was sent back to the learner.
 _Avoid_: Completed, Paid out
 
 **Failed Refund**:
