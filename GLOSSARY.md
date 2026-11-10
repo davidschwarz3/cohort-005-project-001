@@ -24,7 +24,7 @@ A Refund Request an Admin hasn't decided yet.
 _Avoid_: Pending, Requested, Awaiting review
 
 **Approved Refund Request**:
-A Refund Request an Admin has accepted. Approving it is what leads to a Refund.
+A Refund Request an Admin has accepted. Approving it is what leads to a Refund. The learner loses access to the course and their rating of it is removed the moment it's approved, not when the money arrives. Their progress is kept, so if they buy the course again they pick up where they left off. A new purchase is judged on Refund Eligibility like any other, and time already watched still counts.
 
 **Declined Refund Request**:
 A Refund Request an Admin has turned down. The Admin always gives the learner a reason, so they know what to change if they raise a new Refund Request. It has no Refund.
