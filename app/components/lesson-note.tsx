@@ -17,7 +17,7 @@ export function LessonNote({
 
   return (
     <Card className="mb-8">
-      <CardContent className="space-y-3 pt-6">
+      <CardContent className="space-y-3">
         <div className="flex items-center gap-2">
           <NotebookPen className="size-4 text-muted-foreground" />
           <h2 className="font-semibold">Your notes</h2>
@@ -30,7 +30,7 @@ export function LessonNote({
             rows={6}
             defaultValue={note?.body ?? ""}
             placeholder="Only you can read this."
-            className="resize-y"
+            className="max-h-96 min-h-36 resize-y"
           />
           <div className="flex items-center gap-3">
             <Button type="submit" size="sm" disabled={isSaving}>
