@@ -32,7 +32,7 @@ name: Agent — Review A Pull Request
 #   rest as inline comments on their file and line. The workflow pushes the
 #   commits, never forced. If someone pushed to the branch during the run,
 #   GitHub rejects the push, and the commits go to a new branch,
-#   `<pr branch>-<run id>`, opened as a draft PR against the same base. The
+#   `<pr branch>-<run id>-<attempt>`, opened as a draft PR against the same base. The
 #   original PR gets the `agent:blocked` label, because a person has to pick
 #   which to keep.
 #
@@ -93,8 +93,9 @@ jobs:
       GH_REPO: ${{ github.repository }}
       PR_NUMBER: ${{ github.event.pull_request.number }}
       BRANCH: ${{ github.event.pull_request.head.ref }}
-      # Where the fixes go if the push to BRANCH is rejected. New every run.
-      FALLBACK_BRANCH: ${{ github.event.pull_request.head.ref }}-${{ github.run_id }}
+      # Where the fixes go if the push to BRANCH is rejected. New every run,
+      # and every re-run: "Re-run jobs" keeps the run id, not the attempt.
+      FALLBACK_BRANCH: ${{ github.event.pull_request.head.ref }}-${{ github.run_id }}-${{ github.run_attempt }}
       BASE_REF: ${{ github.event.pull_request.base.ref }}
       HEAD_SHA: ${{ github.event.pull_request.head.sha }}
       RUN_URL: https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}

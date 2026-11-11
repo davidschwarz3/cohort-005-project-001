@@ -390,7 +390,7 @@ jobs:
       GH_REPO: ${{ github.repository }}
       SPEC: ${{ needs.survey.outputs.spec }}
       TICKET: ${{ needs.survey.outputs.ticket }}
-      BRANCH: agent/spec-${{ needs.survey.outputs.spec }}-ticket-${{ needs.survey.outputs.ticket }}-${{ github.run_id }}
+      BRANCH: agent/spec-${{ needs.survey.outputs.spec }}-ticket-${{ needs.survey.outputs.ticket }}-${{ github.run_id }}-${{ github.run_attempt }}
       RUN_URL: https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}
 
     steps:
